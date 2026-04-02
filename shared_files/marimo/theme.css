@@ -141,40 +141,47 @@ pre code {
     color: var(--equation-color) !important;
 }
 
-
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Target tables specifically inside Marimo's markdown renderer */
+marimo-markdown table, .prose table, table {
+    width: 100% !important;
+    border-collapse: collapse !important;
     text-align: left;
     font-family: var(--text-font);
     margin: 1em 0;
 }
 
-/* Header Styling - Distinct color and thicker border */
-table th {
-    padding: 12px 16px;
-    border-bottom: 2px solid var(--border);
-    color: var(--h3-color);
-    font-weight: 600;
+/* Header Styling */
+marimo-markdown th, .prose th, table th {
+    padding: 12px 16px !important;
+    border-bottom: 2px solid var(--border) !important;
+    color: var(--h3-color) !important;
+    font-weight: 600 !important;
+    background-color: transparent !important;
 }
 
 /* Row Cell Styling */
-table td {
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border);
-    color: var(--foreground);
+marimo-markdown td, .prose td, table td {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid var(--border) !important;
+    color: var(--foreground) !important;
 }
 
-/* Zebra Striping - Alternating row colors using the muted variable */
+/* Zebra Striping - Forced with !important to override defaults */
+marimo-markdown tbody tr:nth-child(odd), 
+.prose tbody tr:nth-child(odd), 
 table tbody tr:nth-child(odd) {
-    background-color: var(--muted);
+    background-color: var(--muted) !important;
 }
 
+marimo-markdown tbody tr:nth-child(even), 
+.prose tbody tr:nth-child(even), 
 table tbody tr:nth-child(even) {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
-/* Optional: Slight hover effect to highlight the row you are reading */
+/* Hover effect */
+marimo-markdown tbody tr:hover, 
+.prose tbody tr:hover, 
 table tbody tr:hover {
-    background-color: var(--background-darker);
+    background-color: var(--background-darker) !important;
 }

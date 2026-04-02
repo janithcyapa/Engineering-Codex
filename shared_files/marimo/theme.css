@@ -1,0 +1,97 @@
+/* Load fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Fira+Code:wght@300..700&display=swap");
+
+/* Font and Radius Variables */
+:root {
+    --monospace-font: "Fira Code", monospace; /* Clean coding font */
+    --text-font: "Inter", system-ui, -apple-system, "Segoe UI", "Roboto", "Open Sans", sans-serif; /* Modern, pleasant sans-serif */
+    --heading-font: "Inter", system-ui, -apple-system, "Segoe UI", "Roboto", "Open Sans", sans-serif;
+    --radius: 12px; /* Slightly softer corners for a gentler feel */
+}
+
+/* Mininini Theme Colors - Updated */
+:root {
+    /* Backgrounds and Foregrounds - Soft dark instead of pure black */
+    --background: light-dark(
+        #ffffff,
+        #1a1c1e
+    ); /* Soft charcoal gray for dark mode */
+    --background-darker: light-dark(
+        #e5e5e5,
+        #121416
+    ); /* Deeper gray for contrast */
+    --foreground: light-dark(#0a0a0a, #e8edf2); /* Slightly blue-tinted text for readability */
+    --muted: light-dark(#f0f0f0, #25282b); /* Smooth muted backgrounds */
+    --muted-foreground: light-dark(
+        #777777,
+        #9aa4b0
+    ); /* Softer muted text */
+
+    /* UI Elements */
+    --card: light-dark(#fafafa, #1f2226); /* Slightly lighter than background */
+    --card-foreground: light-dark(#222222, #e8edf2);
+    --popover: light-dark(#e8e8e8, #1a1c1e);
+    --popover-foreground: light-dark(#0f0f0f, #e8edf2);
+    --border: light-dark(#444444, #2d3135);
+    --input: light-dark(#f5f5f5, #15171a);
+
+    /* Primary Colors - Muted blue-gray palette */
+    --primary: light-dark(#2563eb, #3b82f6); /* Softer blue */
+    --primary-foreground: light-dark(#ffffff, #ffffff);
+    --secondary: light-dark(#64748b, #94a3b8); /* Muted slate */
+    --secondary-foreground: light-dark(#ffffff, #f1f5f9);
+    --accent: light-dark(#475569, #64748b); /* Subtle accent */
+    --accent-foreground: light-dark(#ffffff, #f8fafc);
+
+    /* Heading Colors - Hierarchical blue/gray system */
+    --h1-color: light-dark(#1e40af, #60a5fa); /* Strong blue for H1 */
+    --h2-color: light-dark(#1e3a8a, #93c5fd); /* Medium blue for H2 */
+    --h3-color: light-dark(#334155, #94a3b8); /* Gray-blue for H3 */
+    --h4-color: light-dark(#475569, #cbd5e1); /* Subtle gray for H4 */
+    --h5-color: light-dark(#64748b, #e2e8f0); /* Light gray for H5 */
+    --h6-color: light-dark(#94a3b8, #f1f5f9); /* Very light for H6 */
+
+    /* Semantic Colors - Keeping but toned down */
+    --error: light-dark(#dc2626, #ef4444);
+    --success: light-dark(#059669, #10b981);
+    --destructive: light-dark(#b91c1c, #dc2626);
+    --action: light-dark(#d97706, #f59e0b);
+    --link: light-dark(#2563eb, #60a5fa);
+    --link-visited: light-dark(#7c3aed, #a78bfa);
+
+    /* Shadows - Softer, more modern */
+    --base-shadow: light-dark(
+        rgba(0, 0, 0, 0.08),
+        rgba(0, 0, 0, 0.3)
+    );
+    --base-shadow-darker: light-dark(
+        rgba(0, 0, 0, 0.12),
+        rgba(0, 0, 0, 0.4)
+    );
+    --base-shadow-opacity: 8%;
+}
+
+/* Optional: Apply heading colors if you need explicit selectors */
+h1, .h1 {
+    color: var(--h1-color);
+}
+
+h2, .h2 {
+    color: var(--h2-color);
+}
+
+h3, .h3 {
+    color: var(--h3-color);
+}
+
+h4, .h4 {
+    color: var(--h4-color);
+}
+
+h5, .h5 {
+    color: var(--h5-color);
+}
+
+h6, .h6 {
+    color: var(--h6-color);
+}

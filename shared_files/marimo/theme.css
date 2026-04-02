@@ -9,7 +9,7 @@
     --radius: 12px;
 }
 
-/* Mininini Theme Colors - More character + orange H4 + blue code + gray math */
+/* Mininini Theme Colors */
 :root {
     /* Backgrounds - soft, not pure black */
     --background: light-dark(#ffffff, #181a1c);
@@ -26,27 +26,27 @@
     --border: light-dark(#444444, #2e3236);
     --input: light-dark(#f5f5f5, #131517);
 
-    /* Primary Colors - Blue with more depth */
+    /* Primary Colors */
     --primary: light-dark(#1e40af, #3b82f6);
     --primary-foreground: light-dark(#ffffff, #ffffff);
     --secondary: light-dark(#475569, #6c7a91);
     --secondary-foreground: light-dark(#ffffff, #f1f5f9);
-    --accent: light-dark(#f97316, #fb923c); /* Orange accent */
+    --accent: light-dark(#f97316, #fb923c);
     --accent-foreground: light-dark(#ffffff, #ffffff);
 
-    /* Heading Colors - H4 gets orange */
-    --h1-color: light-dark(#1e3a8a, #60a5fa);
-    --h2-color: light-dark(#2563eb, #93c5fd);
-    --h3-color: light-dark(#334155, #94a3b8);
-    --h4-color: light-dark(#ea580c, #f97316); /* Orange accent for H4 */
-    --h5-color: light-dark(#64748b, #cbd5e1);
-    --h6-color: light-dark(#94a3b8, #e2e8f0);
+    /* Heading Colors - All gray except H4 (orange) and H5 (blue) */
+    --h1-color: light-dark(#1f2937, #e5e7eb); /* Gray */
+    --h2-color: light-dark(#374151, #d1d5db); /* Gray */
+    --h3-color: light-dark(#4b5563, #9ca3af); /* Gray */
+    --h4-color: light-dark(#ea580c, #f97316); /* Orange accent */
+    --h5-color: light-dark(#2563eb, #60a5fa); /* Blue accent */
+    --h6-color: light-dark(#6b7280, #9ca3af); /* Gray (lighter) */
 
     /* Code & Math Styling */
-    --inline-code-color: light-dark(#2563eb, #60a5fa); /* Blue inline code */
-    --equation-color: light-dark(#6b7280, #9ca3af); /* Gray math/equations */
+    --inline-code-color: light-dark(#2563eb, #60a5fa);
+    --equation-color: light-dark(#6b7280, #9ca3af);
 
-    /* Semantic Colors - More vibrant */
+    /* Semantic Colors */
     --error: light-dark(#dc2626, #f87171);
     --success: light-dark(#059669, #34d399);
     --destructive: light-dark(#b91c1c, #ef4444);
@@ -61,12 +61,38 @@
 }
 
 /* Heading styles */
-h1, .h1 { color: var(--h1-color); }
-h2, .h2 { color: var(--h2-color); }
-h3, .h3 { color: var(--h3-color); }
-h4, .h4 { color: var(--h4-color); font-weight: 600; letter-spacing: -0.01em; }
-h5, .h5 { color: var(--h5-color); }
-h6, .h6 { color: var(--h6-color); }
+h1, .h1 { 
+    color: var(--h1-color); 
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+h2, .h2 { 
+    color: var(--h2-color); 
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+h3, .h3 { 
+    color: var(--h3-color); 
+    font-weight: 600;
+}
+
+h4, .h4 { 
+    color: var(--h4-color); /* Orange */
+    font-weight: 600; 
+    letter-spacing: -0.01em; 
+}
+
+h5, .h5 { 
+    color: var(--h5-color); /* Blue */
+    font-weight: 500;
+}
+
+h6, .h6 { 
+    color: var(--h6-color); /* Gray */
+    font-weight: 500;
+}
 
 /* Inline code styling - Blue */
 code:not(pre code), .inline-code {
@@ -79,14 +105,38 @@ code:not(pre code), .inline-code {
     font-weight: 500;
 }
 
-/* Math/Equation styling - Gray */
-.math, .equation, .katex, .MathJax, mjx-container {
+/* Equation styling - Gray */
+marimo-tex,
+.arithmatex,
+.marimo-tex,
+.katex,
+.katex *,
+.mjx-container,
+mjx-container,
+.math {
     color: var(--equation-color) !important;
-    filter: brightness(0.95);
 }
 
-/* Optional: Give code blocks a subtle blue tint */
+marimo-tex mjx-container,
+marimo-tex .MathJax,
+marimo-tex [class*="math"] {
+    color: var(--equation-color) !important;
+}
+
+.latex,
+.latex *,
+.tex,
+.tex * {
+    color: var(--equation-color) !important;
+}
+
+/* Code blocks subtle blue tint */
 pre code {
     background-color: var(--background-darker);
     border-left: 3px solid var(--primary);
+}
+
+.markdown marimo-tex,
+.prose marimo-tex {
+    color: var(--equation-color) !important;
 }

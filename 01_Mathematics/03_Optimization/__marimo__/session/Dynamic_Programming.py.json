@@ -7,19 +7,19 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "9799eba95cc0610c4c5404c6b3c68218",
+      "code_hash": "e225ad762c0d4403bca6c9b653741a46",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<style>/* Load fonts from Google Fonts */\n@import url(\"https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&family=Fira+Code:wght@300..700&display=swap\");\n\n/* Font and Radius Variables */\n:root {\n    --monospace-font: \"Fira Code\", monospace;\n    --text-font: \"Inter\", system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Open Sans\", sans-serif;\n    --heading-font: \"Inter\", system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Open Sans\", sans-serif;\n    --radius: 12px;\n}\n\n/* Mininini Theme Colors */\n:root {\n    /* Backgrounds - soft, not pure black */\n    --background: light-dark(#ffffff, #181a1c);\n    --background-darker: light-dark(#e5e5e5, #101214);\n    --foreground: light-dark(#0a0a0a, #eef2f5);\n    --muted: light-dark(#f0f0f0, #222528);\n    --muted-foreground: light-dark(#777777, #9aa3ae);\n\n    /* UI Elements */\n    --card: light-dark(#fafafa, #1e2124);\n    --card-foreground: light-dark(#222222, #eef2f5);\n    --popover: light-dark(#e8e8e8, #181a1c);\n    --popover-foreground: light-dark(#0f0f0f, #eef2f5);\n    --border: light-dark(#444444, #2e3236);\n    --input: light-dark(#f5f5f5, #131517);\n\n    /* Primary Colors */\n    --primary: light-dark(#1e40af, #3b82f6);\n    --primary-foreground: light-dark(#ffffff, #ffffff);\n    --secondary: light-dark(#475569, #6c7a91);\n    --secondary-foreground: light-dark(#ffffff, #f1f5f9);\n    --accent: light-dark(#f97316, #fb923c);\n    --accent-foreground: light-dark(#ffffff, #ffffff);\n\n    /* Heading Colors - All gray except H4 (orange) and H5 (blue) */\n    --h1-color: light-dark(#1f2937, #e5e7eb); /* Gray */\n    --h2-color: light-dark(#374151, #d1d5db); /* Gray */\n    --h3-color: light-dark(#4b5563, #9ca3af); /* Gray */\n    --h4-color: light-dark(#ea580c, #f97316); /* Orange accent */\n    --h5-color: light-dark(#2563eb, #60a5fa); /* Blue accent */\n    --h6-color: light-dark(#6b7280, #9ca3af); /* Gray (lighter) */\n\n    /* Code & Math Styling */\n    --inline-code-color: light-dark(#2563eb, #60a5fa);\n    --equation-color: light-dark(#6b7280, #9ca3af);\n\n    /* Semantic Colors */\n    --error: light-dark(#dc2626, #f87171);\n    --success: light-dark(#059669, #34d399);\n    --destructive: light-dark(#b91c1c, #ef4444);\n    --action: light-dark(#d97706, #fbbf24);\n    --link: light-dark(#2563eb, #3b82f6);\n    --link-visited: light-dark(#7c3aed, #a78bfa);\n\n    /* Shadows */\n    --base-shadow: light-dark(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.3));\n    --base-shadow-darker: light-dark(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.4));\n    --base-shadow-opacity: 8%;\n}\n\n/* Heading styles */\nh1, .h1 { \n    color: var(--h1-color); \n    font-weight: 800;\n    letter-spacing: -0.02em;\n}\n\nh2, .h2 { \n    color: var(--h2-color); \n    font-weight: 700;\n    letter-spacing: -0.01em;\n}\n\nh3, .h3 { \n    color: var(--h3-color); \n    font-weight: 600;\n}\n\nh4, .h4 { \n    color: var(--h4-color); /* Orange */\n    font-weight: 600; \n    letter-spacing: -0.01em; \n}\n\nh5, .h5 { \n    color: var(--h5-color); /* Blue */\n    font-weight: 500;\n}\n\nh6, .h6 { \n    color: var(--h6-color); /* Gray */\n    font-weight: 500;\n}\n\n/* Inline code styling - Blue */\ncode:not(pre code), .inline-code {\n    color: var(--inline-code-color);\n    font-family: var(--monospace-font);\n    background-color: var(--muted);\n    padding: 0.2em 0.4em;\n    border-radius: 6px;\n    font-size: 0.9em;\n    font-weight: 500;\n}\n\n/* Equation styling - Gray */\nmarimo-tex,\n.arithmatex,\n.marimo-tex,\n.katex,\n.katex *,\n.mjx-container,\nmjx-container,\n.math {\n    color: var(--equation-color) !important;\n}\n\nmarimo-tex mjx-container,\nmarimo-tex .MathJax,\nmarimo-tex [class*=\"math\"] {\n    color: var(--equation-color) !important;\n}\n\n.latex,\n.latex *,\n.tex,\n.tex * {\n    color: var(--equation-color) !important;\n}\n\n/* Code blocks subtle blue tint */\npre code {\n    background-color: var(--background-darker);\n    border-left: 3px solid var(--primary);\n}\n\n.markdown marimo-tex,\n.prose marimo-tex {\n    color: var(--equation-color) !important;\n}\n</style>"
+            "text/html": "<style>/* Load fonts from Google Fonts */\n@import url(\"https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&family=Fira+Code:wght@300..700&display=swap\");\n\n/* Font and Radius Variables */\n:root {\n    --monospace-font: \"Fira Code\", monospace;\n    --text-font: \"Inter\", system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Open Sans\", sans-serif;\n    --heading-font: \"Inter\", system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Open Sans\", sans-serif;\n    --radius: 12px;\n}\n\n/* Mininini Theme Colors */\n:root {\n    /* Backgrounds - soft, not pure black */\n    --background: light-dark(#ffffff, #181a1c);\n    --background-darker: light-dark(#e5e5e5, #101214);\n    --foreground: light-dark(#0a0a0a, #eef2f5);\n    --muted: light-dark(#f0f0f0, #222528);\n    --muted-foreground: light-dark(#777777, #9aa3ae);\n\n    /* UI Elements */\n    --card: light-dark(#fafafa, #1e2124);\n    --card-foreground: light-dark(#222222, #eef2f5);\n    --popover: light-dark(#e8e8e8, #181a1c);\n    --popover-foreground: light-dark(#0f0f0f, #eef2f5);\n    --border: light-dark(#444444, #2e3236);\n    --input: light-dark(#f5f5f5, #131517);\n\n    /* Primary Colors */\n    --primary: light-dark(#1e40af, #3b82f6);\n    --primary-foreground: light-dark(#ffffff, #ffffff);\n    --secondary: light-dark(#475569, #6c7a91);\n    --secondary-foreground: light-dark(#ffffff, #f1f5f9);\n    --accent: light-dark(#f97316, #fb923c);\n    --accent-foreground: light-dark(#ffffff, #ffffff);\n\n    /* Heading Colors - All gray except H4 (orange) and H5 (blue) */\n    --h1-color: light-dark(#1f2937, #e5e7eb); /* Gray */\n    --h2-color: light-dark(#374151, #d1d5db); /* Gray */\n    --h3-color: light-dark(#4b5563, #9ca3af); /* Gray */\n    --h4-color: light-dark(#ea580c, #f97316); /* Orange accent */\n    --h5-color: light-dark(#2563eb, #60a5fa); /* Blue accent */\n    --h6-color: light-dark(#6b7280, #9ca3af); /* Gray (lighter) */\n\n    /* Code & Math Styling */\n    --inline-code-color: light-dark(#2563eb, #60a5fa);\n    --equation-color: light-dark(#6b7280, #9ca3af);\n\n    /* Semantic Colors */\n    --error: light-dark(#dc2626, #f87171);\n    --success: light-dark(#059669, #34d399);\n    --destructive: light-dark(#b91c1c, #ef4444);\n    --action: light-dark(#d97706, #fbbf24);\n    --link: light-dark(#2563eb, #3b82f6);\n    --link-visited: light-dark(#7c3aed, #a78bfa);\n\n    /* Shadows */\n    --base-shadow: light-dark(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.3));\n    --base-shadow-darker: light-dark(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.4));\n    --base-shadow-opacity: 8%;\n}\n\n/* Heading styles */\nh1, .h1 { \n    color: var(--h1-color); \n    font-weight: 800;\n    letter-spacing: -0.02em;\n}\n\nh2, .h2 { \n    color: var(--h2-color); \n    font-weight: 700;\n    letter-spacing: -0.01em;\n}\n\nh3, .h3 { \n    color: var(--h3-color); \n    font-weight: 600;\n}\n\nh4, .h4 { \n    color: var(--h4-color); /* Orange */\n    font-weight: 600; \n    letter-spacing: -0.01em; \n}\n\nh5, .h5 { \n    color: var(--h5-color); /* Blue */\n    font-weight: 500;\n}\n\nh6, .h6 { \n    color: var(--h6-color); /* Gray */\n    font-weight: 500;\n}\n\n/* Inline code styling - Blue */\ncode:not(pre code), .inline-code {\n    color: var(--inline-code-color);\n    font-family: var(--monospace-font);\n    background-color: var(--muted);\n    padding: 0.2em 0.4em;\n    border-radius: 6px;\n    font-size: 0.9em;\n    font-weight: 500;\n}\n\n/* Equation styling - Gray */\nmarimo-tex,\n.arithmatex,\n.marimo-tex,\n.katex,\n.katex *,\n.mjx-container,\nmjx-container,\n.math {\n    color: var(--equation-color) !important;\n}\n\nmarimo-tex mjx-container,\nmarimo-tex .MathJax,\nmarimo-tex [class*=\"math\"] {\n    color: var(--equation-color) !important;\n}\n\n.latex,\n.latex *,\n.tex,\n.tex * {\n    color: var(--equation-color) !important;\n}\n\n/* Code blocks subtle blue tint */\npre code {\n    background-color: var(--background-darker);\n    border-left: 3px solid var(--primary);\n}\n\n.markdown marimo-tex,\n.prose marimo-tex {\n    color: var(--equation-color) !important;\n}\n\n\ntable {\n    width: 100%;\n    border-collapse: collapse;\n    text-align: left;\n    font-family: var(--text-font);\n    margin: 1em 0;\n}\n\n/* Header Styling - Distinct color and thicker border */\ntable th {\n    padding: 12px 16px;\n    border-bottom: 2px solid var(--border);\n    color: var(--h3-color);\n    font-weight: 600;\n}\n\n/* Row Cell Styling */\ntable td {\n    padding: 12px 16px;\n    border-bottom: 1px solid var(--border);\n    color: var(--foreground);\n}\n\n/* Zebra Striping - Alternating row colors using the muted variable */\ntable tbody tr:nth-child(odd) {\n    background-color: var(--muted);\n}\n\ntable tbody tr:nth-child(even) {\n    background-color: transparent;\n}\n\n/* Optional: Slight hover effect to highlight the row you are reading */\ntable tbody tr:hover {\n    background-color: var(--background-darker);\n}\n</style>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "DPnx",
+      "id": "MJUe",
       "code_hash": "e3e8c5c62f90bca7bc4f5ce888e42c03",
       "outputs": [
         {
@@ -32,26 +32,104 @@
       "console": []
     },
     {
-      "id": "ZxdO",
-      "code_hash": "70e30ea17afe87c753d6f11d10619091",
+      "id": "vblA",
+      "code_hash": "e74c57cbcaaf2389c3c4b86fe4837e57",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Dynamic Programming is an algorithmic technique with the following properties.</span>\n<ol>\n<li>It is mainly an optimization over plain <code>recursion</code>. Wherever we see a recursive solution that has repeated calls for the same inputs, we can optimize it using Dynamic Programming.</li>\n<li>The idea is to simply store the results of <code>subproblems</code> so that we do not have to re-compute them when needed later.</li>\n</ol>\n<span class=\"paragraph\">Some popular problems solved using Dynamic Programming are Fibonacci Numbers, Diff Utility (Longest Common Subsequence), Bellman\u2013Ford Shortest Path, Floyd Warshall, Edit Distance and Matrix Chain Multiplication.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"introduction\">Introduction</h2></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "xIIo",
-      "code_hash": "2c3181e58760ffa5d33fbac6dabaa8e6",
+      "id": "bkHC",
+      "code_hash": "4342fefc268280c00a39e88c01783b89",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"staircase-problem\">Staircase Problem</h2></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"what-is-dp\">What is DP ?</h3>\n<span class=\"paragraph\">Dynamic Programming is an algorithmic technique with the following properties.It solves complex, large-scale problems by breaking them down into smaller, simpler subproblems. Instead of recalculating the answer to these subproblems every time they appear, DP solves them once and stores the result.</span>\n<span class=\"paragraph\">You can only use DP if a problem satisfies these two mathematical properties:</span>\n<ol>\n<li><code>Optimal Substructure</code>: The optimal solution to the overall problem contains the optimal solutions to its subproblems. (e.g., If the fastest route from A to C goes through B, the A-to-B segment must be the absolute fastest route to B).</li>\n<li><code>Overlapping Subproblems</code>: The algorithm encounters the exact same subproblems multiple times during its execution. Storing these answers saves exponential amounts of computation time.</li>\n</ol>\n<span class=\"paragraph\">Some popular problems solved using Dynamic Programming are Fibonacci Numbers, Diff Utility (Longest Common Subsequence), Bellman\u2013Ford Shortest Path, Floyd Warshall, Edit Distance and Matrix Chain Multiplication.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "d342a35f604960fb3deb520b6a4b7b34",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"dynamic-programming-vs-greedy-algorithms\">Dynamic Programming vs. Greedy Algorithms</h3>\n<span class=\"paragraph\">It is crucial to distinguish DP from Greedy algorithms, as both are used for optimization.</span>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">Feature</th>\n<th style=\"text-align: left;\">Greedy Algorithm</th>\n<th style=\"text-align: left;\">Dynamic Programming</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>The Mindset</strong></td>\n<td style=\"text-align: left;\">\"Take the best immediate option.\"</td>\n<td style=\"text-align: left;\">\"Evaluate all options to find the best global plan.\"</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Re-evaluation</strong></td>\n<td style=\"text-align: left;\">Never looks back once a choice is made.</td>\n<td style=\"text-align: left;\">Systematically checks combinations using stored past data.</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Optimal Guarantee</strong></td>\n<td style=\"text-align: left;\">Fails if the immediate best choice leads to a bad long-term outcome.</td>\n<td style=\"text-align: left;\">Mathematically guarantees the absolute best overall solution.</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Execution</strong></td>\n<td style=\"text-align: left;\">Fast, uses very little memory.</td>\n<td style=\"text-align: left;\">Slower, uses more memory (to store the DP tables).</td>\n</tr>\n</tbody>\n</table></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "92bea9a6413ae1280e6e25bf3ffd1e53",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"the-core-elements-of-a-dp-model\">The Core Elements of a DP Model</h3>\n<span class=\"paragraph\">To translate a real-world problem into a DP algorithm, you must define four components:</span>\n<ol>\n<li>Stages (<marimo-tex class=\"arithmatex\">||(i||)</marimo-tex>): The steps or phases where a decision must be made. (e.g., Which item to consider packing next, or which city to drive to next).</li>\n<li>States (<marimo-tex class=\"arithmatex\">||(x_i||)</marimo-tex>): The specific condition or available resources at a given stage. (e.g., \"I have 4 tons of capacity left in the vessel\" or \"I am currently at Node C\"). The state acts as the link between stages.</li>\n<li>Alternatives (<marimo-tex class=\"arithmatex\">||(m_i||)</marimo-tex>): The available choices or actions you can take from your current state. (e.g., \"Pack 0, 1, or 2 units of this item\").</li>\n<li>Recursive Equation: The formal mathematical function linking the stages together. It always takes the form of:</li>\n</ol>\n<blockquote>\n<span class=\"paragraph\">Current Best Value = (Immediate Reward of Choice) + (Optimal Value of the Remaining State).</span>\n</blockquote></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "1d2e59de29b26fbda12de29988dda17c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"approaches-to-solving-dp\">Approaches to Solving DP</h3>\n<h5 id=\"direction-of-logic\">Direction of Logic</h5>\n<ul>\n<li><code>Top-Down (Memoization)</code>: Start at the final, large problem and recursively break it down. You save the answer to a cache (memo) as you find it.</li>\n<li><code>Bottom-Up (Tabulation)</code>: Start with the smallest, most trivial base cases (like x=0) and systematically build a table upward until you reach the final problem size. This eliminates the overhead of recursive function calls.</li>\n</ul>\n<h5 id=\"direction-of-recursion-networktabular-dp\">Direction of Recursion (Network/Tabular DP)</h5>\n<span class=\"paragraph\">When dealing with staged problems (like the Shortest Path or Knapsack tables), you can iterate in two directions:</span>\n<ul>\n<li><code>Forward Recursion</code>: Start at Stage 1 and move toward Stage n. You calculate the state based on what you already accumulated:</li>\n</ul>\n<marimo-tex class=\"arithmatex\">||[ x_i = x_{i-1} + w_i m_i||]</marimo-tex><ul>\n<li><code>Backward Recursion</code>: Start at the final Stage n and work backward to Stage 1. You calculate the state based on what you will have left for the next stage:</li>\n</ul>\n<marimo-tex class=\"arithmatex\">||[ x_i = x_{i+1} + w_i m_i||]</marimo-tex><span class=\"paragraph\">(Note: Backward recursion is often preferred in Operations Research because it naturally answers \"If I am in this state, what is the best path to the finish?\")</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "ff3d64fda207c80ebd9c0306897448e9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"general-strategy-for-setting-up-a-dp-solution\">General Strategy for Setting up a DP Solution</h3>\n<span class=\"paragraph\">If you are faced with a new DP problem, follow these exact steps:</span>\n<ol>\n<li>Define the State: What is the minimal amount of information you need to track so you don't have to look back? (e.g., \"Remaining Capacity\").</li>\n<li>Define the Base Case: What is the answer to the smallest possible subproblem? (e.g., \"If capacity is 0, profit is 0\").</li>\n<li>Formulate the Transition: How do you move from one state to the next? Write the Bellman equation.</li>\n<li>Draw the Table: Put your states (x) on the rows, your alternatives (m) on the columns, and calculate the values step-by-step.</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "b9ad4df31fb07916f94527e46e0b7b75",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-shortest-path-problem\">The Shortest Path Problem</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "e1ae3b91560d7507c051f6b83fbc1bbd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-knapsack-problem\">The Knapsack Problem</h2></span>"
           }
         }
       ],
